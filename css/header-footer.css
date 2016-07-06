@@ -5,10 +5,7 @@
 }
 
 .navbar-default {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0)
-  );
+  background: #000022;
   border: transparent;
   color: white;
   height: 21%;
@@ -104,7 +101,7 @@ footer#content-footer > div#container-footer.container {
   color: #83ce00;
   background: white;
   border-radius: 100%;
-  margin-left: 20px;
+  margin: 0 20px;
 }
 
 #social-media-links > div > a > i.fa-instagram:hover,
@@ -146,10 +143,12 @@ footer#content-footer > div#container-footer.container {
 #social-media-links {
   height: 234px;
   width: 50%;
+  margin-bottom: 45px;
 }
 
 #social-media-links div {
   text-align: center;
+  padding: 12px 0;
 }
 
 #first {
@@ -183,7 +182,7 @@ footer#content-footer > div#container-footer.container {
 }
 
 div#contact {
-  width: 80%;
+  width: 30%;
 }
 
 /*--------------------Media Queries------------------*/
@@ -219,7 +218,7 @@ div#contact {
 @media (max-width: 768px) {
 
   .navbar-default {
-    background-color: #000043;
+    background-color: #000022;
     height: 155px;
   }
 
@@ -229,8 +228,6 @@ div#contact {
 
   img#logo {
     width: 155px;
-    /*height: 130px;
-    box-sizing: border-box;*/
   }
 
 
