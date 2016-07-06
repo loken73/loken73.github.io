@@ -15,6 +15,8 @@ html, body {
   background-attachment: fixed;
 }
 
+/*------------------------Header----------------------------*/
+
 .navbar {
   margin-bottom: 0;
 }
@@ -53,25 +55,6 @@ a#active {
   background-color: none !important;
 }
 
-#body-container {
-  width: 90%;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  height: 59%;
-  color: white;
-
-  display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-}
-
-/*#logo {
-  width: 100%;
-  box-sizing: border-box;
-}*/
-
 ul.navbar-right li a {
   padding: 20px 8px;
   font-size: 18px;
@@ -103,6 +86,22 @@ button#hamburger {
   margin-top: 7px;
   height: 4px;
   background-color: white;
+}
+
+/*------------------Body----------------------*/
+
+#body-container {
+  width: 90%;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  height: 59%;
+  color: white;
+
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
 }
 
 #shop-button {
@@ -158,6 +157,8 @@ div.row#button-row {
  width: 50%;
  padding-left: 30px;
 }
+
+/*--------------------Footer------------------------*/
 
 footer#content-footer > div#container-footer.container {
   width: 90%;
