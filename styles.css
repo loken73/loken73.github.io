@@ -1,0 +1,36 @@
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
+
+.navbar-default .navbar-nav>li>a:visited {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: white;
+  border-bottom: solid 3px #0f0c1f;
+}
+
+a#active {
+  color: #0f0c1f;
+}
+
+ul.navbar-right li a {
+  padding: 20px 8px;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin-top: 60px;
+  font-weight: bold;
+  color: black;
+}
+
+img#logo {
+  width: 17vw;
+  height: 175px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+a.navbar-brand {
+  height: 19vh;
+}
