@@ -108,3 +108,319 @@ button#hamburger {
   padding: 20px 22px 23px;
   border: none;
 }
+
+/*----------------------Footer------------------------------*/
+
+footer#content-footer {
+  width: auto;
+  background-color: $background-header-footer;
+  height: 285px;
+  color: $text-color;
+}
+
+footer#content-footer > div#container-footer.container {
+  width: 90%;
+  height: 100%;
+  @include flexbox-use;
+  /*display: flex !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-direction: column !important;
+  -webkit-flex-direction: column;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+
+   justify-content: center;
+   -webkit-justify-content: center;*/
+
+}
+
+#social-media-links div a i {
+  /*padding: 13px;
+  font-size: 40px;
+  color: #83ce00;
+  background: white;
+  border-radius: 100%;
+  margin: 0 20px;*/
+  @include social-links;
+}
+
+#social-media-links > div > a > i.fa-instagram:hover,
+#social-media-links > div > a > i.fa-facebook-square:hover {
+  background-color: #83ce00;
+  color: $text-color;
+}
+
+.footer-divs {
+  color: $text-color;
+  font-size: 16px;
+}
+
+.footer-divs a i {
+  color: $text-color;
+  font-size: 40px;
+}
+
+#address,
+#phone-number {
+  display: inline-block;
+  padding-left: 10px;
+  color: $text-color;
+}
+
+#email-address {
+  color: $text-color;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px
+}
+
+.fa-phone,
+.fa-envelope {
+  padding-top: 10px;
+}
+
+#social-media-links {
+  height: 234px;
+  width: 50%;
+  margin-bottom: 45px;
+}
+
+#social-media-links div {
+  text-align: center;
+  padding: 12px 0;
+}
+
+#first {
+  padding: 5px;
+}
+
+
+.short {
+  display: block;
+  margin-left: 15px;
+  padding:7px;
+}
+
+#contact-us {
+  height: fit-content;
+}
+
+#follow-us-footer {
+  width: 100%;
+}
+
+.inside-footer-title {
+  font-size: 30px;
+  text-align: center;
+  line-height: 2.2;
+  width: 100%;
+}
+
+.footer-divs {
+  width: 50%;
+}
+
+div#contact {
+  width: 30%;
+}
+
+/*--------------------Media Queries------------------*/
+
+@media (max-width: 1150px) {
+
+  .container-fluid > .container {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .container-fluid > .container {
+    width: 95%;
+  }
+
+  img#logo {
+    width: 22vw;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 10px;
+}
+
+  a.navbar-brand {
+    height: 22vh;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar-default {
+    background-color: #000022;
+    height: 155px;
+  }
+
+  .navbar-header {
+    height: 155px;
+  }
+
+  img#logo {
+    width: 155px;
+  }
+
+
+  a.navbar-brand {
+    height: 25vh;
+  }
+
+  .container-fluid > .container {
+    width: 90%;
+  }
+
+  body > footer#content-footer {
+    flex-wrap: wrap;
+    height: 290px;
+  }
+
+
+  footer#content-footer > div#container-footer.container {
+    flex-direction: column-reverse !important;
+  }
+
+  #container-footer > div {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  div#container-footer > div#social-media-links > div > a > i.fa.fa-instagram.fa-lg {
+    margin-left: 110px;
+  }
+
+  #full-phone-div {
+    margin-left: 45px;
+  }
+
+  #first {
+    margin-right: 45px;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .navbar-default {
+    height: 120px;
+  }
+
+  .container-fluid > .container {
+    width: 100%;
+  }
+
+  a.navbar-brand {
+    height: 100px;
+  }
+
+  img#logo {
+    width: 120px;
+  }
+
+  button#hamburger {
+    margin: 20px 0 0 0;
+  }
+
+  body > footer#content-footer {
+    height: 310px;
+    width: 100%;
+  }
+
+  .navbar-header {
+    height: 120px;
+  }
+
+  footer#content-footer > div#container-footer.container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  div#contact-us {
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 415px) {
+
+  div#contact-us div.short {
+    margin-left: 5px;
+  }
+
+  div.footer-divs.longer {
+    margin-left: 10px;
+  }
+
+  #first {
+    margin: 0;
+  }
+
+}
+
+
+/*------------------Slightly Larger Phones------------------*/
+
+@media (max-width: 376px) {
+
+  div#container-footer.container.follow > div#contact-us > div#full-phone-div.footer-divs.short {
+    margin: 0 7px 0 0;
+  }
+
+  div#container-footer.container.follow > div#contact-us > a > div#first {
+    margin-right: 10px;
+  }
+
+  div#container-footer.container.follow > div#contact-us > div#full-phone-div.footer-divs.short {
+    margin-left: 10px;
+  }
+
+  div#container-footer.container.follow > div#contact-us > div.footer-divs.longer {
+    margin-top: 0;
+  }
+
+}
+
+
+
+/*----------------------Galaxy S5-----------------------*/
+
+
+
+@media (max-width: 360px) {
+
+  div#container-footer > div#social-media-links > div > a > i.fa.fa-instagram.fa-lg {
+    margin-left: 80px;
+  }
+
+}
+
+
+
+/*---iPhone 5 and small width devices---*/
+
+
+
+@media (max-width: 321px) {
+
+  footer#content-footer > div#container-footer > div#contact-us {
+    margin: 0 !important;
+  }
+
+}
