@@ -28,9 +28,6 @@ a#active {
   color: #0f0c1f;
 }
 
-
-.navbar-default .navbar-nav > li.active,
-.navbar-default .navbar-nav > li.active,
 .navbar-default .navbar-nav > li.active  {
   background-color: none !important;
 }
@@ -62,6 +59,11 @@ img#logo {
   padding: 10px;
 }
 
+button#hamburger {
+  margin: 40px 0 0 0;
+  padding: 20px 22px 23px;
+  border: none;
+}
 
 /*----------------------Footer------------------------------*/
 
@@ -95,7 +97,39 @@ footer#content-footer > div#container-footer.container {
 
 }
 
-#social-media-links div a i {
+div#contact {
+  width: 35%;
+  margin-left: 30px;
+}
+
+.footer-divs {
+  color: white;
+  font-size: 16px;
+  width: 50%;
+}
+
+.footer-divs a i {
+  color: white;
+  font-size: 40px;
+}
+
+#contact-us-div {
+  height: fit-content;
+}
+
+#social-media-links {
+  height: 234px;
+  width: 50%;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+#social-media-links div {
+  text-align: center;
+  padding: 12px 0;
+}
+
+#social-media-links a i {
   padding: 13px;
   font-size: 40px;
   color: #83ce00;
@@ -104,20 +138,10 @@ footer#content-footer > div#container-footer.container {
   margin: 0 20px;
 }
 
-#social-media-links > div > a > i.fa-instagram:hover,
-#social-media-links > div > a > i.fa-facebook-square:hover {
+#social-media-links > a > i.fa-instagram:hover,
+#social-media-links > a > i.fa-facebook-square:hover {
   background-color: #83ce00;
   color: white;
-}
-
-.footer-divs {
-  color: white;
-  font-size: 16px;
-}
-
-.footer-divs a i {
-  color: white;
-  font-size: 40px;
 }
 
 #address,
@@ -132,23 +156,12 @@ footer#content-footer > div#container-footer.container {
   text-decoration: none;
   font-size: 20px;
   display: inline-block;
-  padding: 10px
+  padding: 10px;
 }
 
 .fa-phone,
 .fa-envelope {
-  padding-top: 10px;
-}
-
-#social-media-links {
-  height: 234px;
-  width: 50%;
-  margin-bottom: 45px;
-}
-
-#social-media-links div {
-  text-align: center;
-  padding: 12px 0;
+  padding-top: 5px;
 }
 
 #first {
@@ -162,10 +175,6 @@ footer#content-footer > div#container-footer.container {
   padding:7px;
 }
 
-#contact-us {
-  height: fit-content;
-}
-
 #follow-us-footer {
   width: 100%;
 }
@@ -175,14 +184,6 @@ footer#content-footer > div#container-footer.container {
   text-align: center;
   line-height: 2.2;
   width: 100%;
-}
-
-.footer-divs {
-  width: 50%;
-}
-
-div#contact {
-  width: 30%;
 }
 
 /*--------------------Media Queries------------------*/
@@ -201,7 +202,7 @@ div#contact {
     width: 95%;
   }
 
-  img#logo {
+ /* img#logo {
     width: 22vw;
     box-sizing: border-box;
     z-index: 1;
@@ -210,38 +211,38 @@ div#contact {
 
   a.navbar-brand {
     height: 22vh;
-  }
+  }*/
 
 }
 
 
 @media (max-width: 768px) {
 
-  .navbar-default {
+  /*.navbar-default {
     background-color: #000022;
-    height: 155px;
-  }
+    height: 190px;
+  }*/
 
   .navbar-header {
-    height: 155px;
+    height: 170px;
   }
 
-  img#logo {
+  /*img#logo {
     width: 155px;
   }
 
 
   a.navbar-brand {
     height: 25vh;
-  }
+  }*/
 
   .container-fluid > .container {
     width: 90%;
   }
 
-  body > footer#content-footer {
+  /*body > footer#content-footer {
     flex-wrap: wrap;
-    height: 290px;
+    height: 600px;
   }
 
 
@@ -266,14 +267,14 @@ div#contact {
 
   #first {
     margin-right: 45px;
-  }
+  }*/
 
 }
 
 @media (max-width: 550px) {
 
   .navbar-default {
-    height: 120px;
+    height: 150px;
   }
 
   .container-fluid > .container {
@@ -285,7 +286,8 @@ div#contact {
   }
 
   img#logo {
-    width: 120px;
+    width: 150px;
+    height: 130px;
   }
 
   button#hamburger {
@@ -293,7 +295,7 @@ div#contact {
   }
 
   body > footer#content-footer {
-    height: 310px;
+    height: 340px;
     width: 100%;
   }
 
@@ -313,7 +315,51 @@ div#contact {
 
 }
 
+@media (max-width: 460px){
+  
+  body > footer#content-footer {
+    height: 380px;
+  }
+
+  footer#content-footer > div#container-footer.container{
+    justify-content: flex-start;
+  }
+
+  .footer-divs {
+    width: 100%;
+  }
+  
+  .short {
+    display: inline-block;
+  }
+
+  div#contact {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  div.short.email{
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  div#social-media-links {
+    height: fit-content;
+    margin: 0;
+    width: 100%;
+  }
+
+
+}
+
 @media (max-width: 415px) {
+
+  img#logo {
+    width: 120px;
+    height: 100px;
+  }
 
   div#contact-us div.short {
     margin-left: 5px;
@@ -327,27 +373,27 @@ div#contact {
     margin: 0;
   }
 
+  div#social-media-links {
+    height: fit-content;
+    margin: 0;
+  }
+
 }
 
 
 /*------------------Slightly Larger Phones------------------*/
 
-@media (max-width: 376px) {
+@media (max-width: 389px) {
 
-  div#container-footer.container.follow > div#contact-us > div#full-phone-div.footer-divs.short {
-    margin: 0 7px 0 0;
+  body > footer#content-footer {
+    height: 420px;
   }
 
-  div#container-footer.container.follow > div#contact-us > a > div#first {
-    margin-right: 10px;
-  }
-
-  div#container-footer.container.follow > div#contact-us > div#full-phone-div.footer-divs.short {
-    margin-left: 10px;
-  }
-
-  div#container-footer.container.follow > div#contact-us > div.footer-divs.longer {
-    margin-top: 0;
+  .short{
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
   }
 
 }

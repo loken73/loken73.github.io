@@ -1,4 +1,10 @@
+
+/*---------------$ Variables----------------------*/
+
 $text-color: white;
+$background-header-footer: #000022;
+$active-page-color: #9a5f3d;
+$border-bottom-hover: solid 3px #9a5f3d;
 
 
 /*---------------------Mixins---------------------*/
@@ -7,12 +13,98 @@ $text-color: white;
   display: flex;
   display: -webkit-box;
   display: -moz-box;
+  display: -moz-flex;
   display: -ms-flexbox;
   display: -webkit-flex;
+
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+
+  justify-content: center;
+  -webkit-justify-content: center;
+ 
+  flex-wrap: wrap; 
+  -webkit-flex-wrap: wrap;
 }
 
-@mixin flex-direction-prefixes(){
-  flex-direction: column;
-  -webkit-box-direction: column;
+@mixin navbar-anchors(){
+  padding: 20px 8px;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  font-weight: bold;
+  color: white;
+}
 
+@mixin social-links(){
+  padding: 13px;
+  font-size: 40px;
+  color: #83ce00;
+  background: white;
+  border-radius: 100%;
+  margin: 0 20px;
+}
+
+/*-----------------------Header------------------------*/
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background: $background-header-footer;
+  border: transparent;
+  color: $text-color;
+  height: 21%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: $text-color;
+}
+
+.navbar-default .navbar-nav>li>a:visited {
+  color: $text-color;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: $text-color;
+  border-bottom: $border-bottom-hover;
+}
+
+a#active {
+  color: $active-page-color;
+}
+
+
+.navbar-default .navbar-nav > li.active  {
+  background-color: none !important;
+}
+
+ul.navbar-right li a {
+  @include navbar-anchors;
+}
+
+a.navbar-brand {
+  height: 200px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  width: 35px;
+  margin-top: 7px;
+  height: 4px;
+  background-color: white;
+}
+
+img#logo {
+  width: 200px;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 10px;
+}
+
+button#hamburger {
+  margin: 40px 0 0 0;
+  padding: 20px 22px 23px;
+  border: none;
 }
