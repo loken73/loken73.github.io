@@ -15,3 +15,11 @@
     -ms-transform: skewX(-20deg);
     -o-transform: skewX(-20deg);
 }
+
+.questions{
+    color: #343434;
+}
+
+#why-us{
+    font-size: 60px;
+}
