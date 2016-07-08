@@ -1,3 +1,7 @@
+img {
+    display: inline;
+}
+
 #about {
     width: fit-content;
     padding: 10px 70px;
@@ -22,4 +26,12 @@
 
 #why-us{
     font-size: 60px;
+}
+
+.sub-section-title{
+    font-size: 32px;
+}
+
+.row {
+    margin: 50px 0;
 }
