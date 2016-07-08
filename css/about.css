@@ -1,5 +1,10 @@
+body {
+    background-color: #F2F2F2;
+}
+
 img {
     display: inline;
+    border-radius: 10px;
 }
 
 #about {
@@ -29,9 +34,25 @@ img {
 }
 
 .sub-section-title{
-    font-size: 32px;
+    font-size: 34px;
+    margin-bottom: 40px;
 }
 
 .row {
     margin: 50px 0;
 }
+
+.facts {
+    font-size: 18px;
+    border: solid 1px #000022;
+    color: #000022;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: #E0EEEE;
+}
+
+/*Greens
+color: #435D36
+background-color: #C5E3BF
+*/

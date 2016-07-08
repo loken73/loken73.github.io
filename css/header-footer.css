@@ -337,7 +337,7 @@ div#contact {
 
 }
 
-@media (max-width: 415px) {
+@media (max-width: 422px) {
 
   img#logo {
     width: 120px;
@@ -352,13 +352,6 @@ div#contact {
     height: fit-content;
     margin: 0;
   }
-
-}
-
-
-/*------------------Slightly Larger Phones------------------*/
-
-@media (max-width: 389px) {
 
   body > footer#content-footer {
     height: 430px;
