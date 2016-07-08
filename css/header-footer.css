@@ -20,12 +20,11 @@
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: white;
-  border-bottom: solid 3px #0f0c1f;
+  color:  #5F9EA0;
 }
 
 a#active {
-  color: #0f0c1f;
+  color: white;
 }
 
 .navbar-default .navbar-nav > li.active  {
@@ -240,41 +239,17 @@ div#contact {
     width: 90%;
   }
 
-  /*body > footer#content-footer {
-    flex-wrap: wrap;
-    height: 600px;
-  }
-
-
-  footer#content-footer > div#container-footer.container {
-    flex-direction: column-reverse !important;
-  }
-
-  #container-footer > div {
-    height: fit-content;
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  div#container-footer > div#social-media-links > div > a > i.fa.fa-instagram.fa-lg {
-    margin-left: 110px;
-  }
-
-  #full-phone-div {
-    margin-left: 45px;
-  }
-
-  #first {
-    margin-right: 45px;
-  }*/
-
   ul.navbar-right li a {
-  padding: 10px 8px;
+  padding: 20px 8px;
   font-size: 18px;
   box-sizing: border-box;
   font-weight: bold;
   color: white;
+  margin-top: 10px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #000022;
 }
 
 }
@@ -303,7 +278,7 @@ div#contact {
   }
 
   body > footer#content-footer {
-    height: 340px;
+    height: 350px;
     width: 100%;
   }
 
@@ -326,7 +301,7 @@ div#contact {
 @media (max-width: 460px){
   
   body > footer#content-footer {
-    height: 380px;
+    height: 390px;
   }
 
   footer#content-footer > div#container-footer.container{
@@ -370,15 +345,7 @@ div#contact {
   }
 
   div#contact-us div.short {
-    margin-left: 5px;
-  }
-
-  div.footer-divs.longer {
     margin-left: 10px;
-  }
-
-  #first {
-    margin: 0;
   }
 
   div#social-media-links {
@@ -394,7 +361,7 @@ div#contact {
 @media (max-width: 389px) {
 
   body > footer#content-footer {
-    height: 420px;
+    height: 430px;
   }
 
   .short{
