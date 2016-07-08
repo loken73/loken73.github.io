@@ -1,6 +1,17 @@
 #about {
-    padding: 10px 40px;
+    width: fit-content;
+    padding: 10px 70px;
     text-align: center;
     background-color: #83ce00;
     color: #000022;
+    margin: 50px auto;
+    font-size: 28px;
+    font-weight: 700;
+
+
+    transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
 }
