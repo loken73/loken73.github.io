@@ -11,12 +11,80 @@
 
 */
 
-body > div.container-fluid.carousel {
-  padding: 0;
-  height: 0;
+.carousel-inner {
+  height: 600px;
+}
+
+.carousel img {
+  min-width: 100%;
+  max-height: 600px;
+}
+
+/*-----------------------Work on the slides-----------*/
+
+#fish-carousel .item {
+  height: 600px;
+  background-size: cover;
+}
+
+#slide1 {
+  background: url('../img/Tricolor-Rock-Angel-Fish.jpg') center center no-repeat;
+}
+
+#slide2{
+  background: url('../img/corals.jpg') center center no-repeat;
+}
+
+#slide3{
+  background: url('../img/fish-tank.jpg') center center no-repeat;
+}
+
+
+/*-------------------------------Media Queries------------------*/
+
+@media (max-width: 768px) {
+  
+  .carousel-inner {
+  height: 500px;
+}
+
+  #fish-carousel .item {
+  height: 500px;
+  }
+
+}
+
+@media (max-width: 550px){
+  
+  .carousel-inner {
   height: 400px;
 }
 
-img {
-  height: 100%;
+  #fish-carousel .item {
+  height: 400px;
+  }
+}
+
+@media (max-width: 500px){
+
+  .carousel-inner {
+  height: 350px;
+}
+
+  #fish-carousel .item {
+  height: 350px;
+  }
+
+}
+
+@media (max-width: 415px){
+
+  .carousel-inner {
+  height: 255px;
+}
+
+  #fish-carousel .item {
+  height: 255px;
+  }
+
 }
