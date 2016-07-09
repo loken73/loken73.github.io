@@ -117,19 +117,21 @@
 
           <form class="form-inline">
 
-            <div class="form-group">
+            <div id="name-div" class="form-group">
 	            <label class="sr-only" for="name-input">Name</label>
-              <input type="text" class="form-control" id="name-input" placeholder="What should we call you?">
+                <input type="text" class="form-control" id="name-input" placeholder="What should we call you?">
             </div>
 
-            <div class="form-group">
+            <div id="email-div" class="form-group">
               <label class="sr-only" for="email-input">Email</label>
-              <input type="email" class="form-control" id="email-input" placeholder="Where should we email you?">
+              <div class>
+                <input type="email" class="form-control" id="email-input" placeholder="Where should we email you?">
+              </div>
             </div>
             <!--<input class="col-md-6" type="text" placeholder="What should we call you?">
             <input class="col-md-6" type="text" placeholder="Where do you get electronic correspondence?">-->
-            <textarea id="message" class="form-control" rows="3"></textarea>
           </form>
+          <textarea id="message" class="form-control" rows="14" placeholder="Let us know how you feel."></textarea>
 
           </div>
         </body>

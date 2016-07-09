@@ -56,3 +56,40 @@ img {
 color: #435D36
 background-color: #C5E3BF
 */
+
+@media (max-width: 1200px){
+
+    .sub-section-title {
+        font-size: 30px;
+    }
+
+    .facts {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .sub-section-title {
+      font-size: 30px;
+    }
+
+}
+
+@media (max-width:580px){
+
+    #why-us{
+        font-size: 45px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:460px) {
+
+    #why-us{
+        font-size: 40px;
+    }
+
+}
