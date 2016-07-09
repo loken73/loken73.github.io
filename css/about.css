@@ -48,7 +48,8 @@ img {
     color: #000022;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 40px;
+    line-height: 1.6;
     background-color: #E0EEEE;
 }
 
