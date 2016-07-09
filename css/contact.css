@@ -1,3 +1,7 @@
+body {
+    background-color: #F2F2F2;
+}
+
 #contact-title {
     width: fit-content;
     padding: 10px 70px;
